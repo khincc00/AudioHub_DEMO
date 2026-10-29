@@ -2,16 +2,21 @@
 
 Edisi demo AudioHub untuk macOS: routing audio dengan fitur terbatas. Versi 0.3.0.
 
-## Unduh
+## Unduh dan pasang
 
-Unduh **AudioHub-Demo.zip** dari [Releases](https://github.com/khincc00/AudioHub_DEMO/releases/latest), lalu pindahkan `AudioHub Demo.app` ke folder Applications.
+1. Unduh **AudioHub-Demo-0.3.0.pkg** dari [Releases](https://github.com/khincc00/AudioHub_DEMO/releases/latest).
+2. Klik dua kali file `.pkg`, lalu masukkan password admin.
+3. Installer memasang dua hal:
+   - `AudioHub Demo.app` ke folder Applications.
+   - Driver perangkat virtual **AVHub v2** ke `/Library/Audio/Plug-Ins/HAL`. Perangkat **avhub_virtual1** (VC 1/2) dipakai di demo.
+4. Jika VC 1/2 belum muncul, restart Mac.
 
-Build demo belum dinotarisasi oleh Apple. Saat pertama kali dibuka, klik kanan aplikasi lalu pilih **Open**.
+Paket ini sudah ditandatangani Developer ID. Jika macOS memblokir karena belum dinotarisasi, buka **System Settings → Privacy & Security**, lalu pilih **Open Anyway**.
 
 ## Yang bisa dipakai
 
 - Matriks routing, maksimal **8 route aktif**.
-- Perangkat virtual **VC 1/2**. Dipilih otomatis saat tersedia.
+- Perangkat virtual **VC 1/2** (avhub_virtual1). Dipilih otomatis saat tersedia.
 - Gain, mute, pan, solo, dan meter.
 
 ## Terkunci di edisi demo
@@ -27,7 +32,6 @@ Fitur berikut tampil di antarmuka, tetapi terkunci (ditandai gembok):
 ## Persyaratan
 
 - macOS 13.0 atau lebih baru.
-- Driver perangkat virtual **AVHub v2** harus terpasang agar VC 1/2 muncul.
 - Akses mikrofon diminta macOS saat input dipakai.
 
 ## Berlangganan
